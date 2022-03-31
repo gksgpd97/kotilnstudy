@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:gravity="center_vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user1"
+        android:id="@+id/userImage"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hhw**"
+            android:id="@+id/idName"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5분전"
+            android:layout_below="@+id/idName"
+            android:id="@+id/minute"/>
+
+        <RatingBar
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idName"
+            android:layout_toRightOf="@+id/minute"
+            android:numStars="5"
+            android:progressTint="@color/orange"
+            android:rating="3"
+            android:stepSize="0.5"
+            android:id="@+id/ratingStar"/>
+
+        <TextView
+            android:id="@+id/shortComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/minute"
+            android:text="최악의 영화, 추천합니다." />
+
+        <TextView
+            android:id="@+id/recommendation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shortComment"
+            android:text="추천" />
+
+        <TextView
+            android:id="@+id/recomNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shortComment"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/recommendation"
+            android:text="5" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:layout_toRightOf="@+id/recomNum"
+            android:layout_below="@id/shortComment"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="신고하기"
+            android:layout_below="@+id/shortComment"
+            android:layout_toRightOf="@+id/recomNum"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+</LinearLayout>

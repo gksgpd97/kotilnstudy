@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/movie_list"
+        android:title="영화 목록"
+        android:icon="@drawable/ic_list"/>
+    <item
+        android:id="@+id/movie_api"
+        android:title="영화 API"
+        android:icon="@drawable/ic_review"/>
+    <item
+        android:id="@+id/book"
+        android:title="예매하기"
+        android:icon="@drawable/ic_book"/>
+</menu>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/navy">
+    <ImageView
+        android:id="@+id/image_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/image1"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/text_movie_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. 군도"
+        app:layout_constraintTop_toBottomOf="@+id/image_movie"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/text_movie_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="예매율 61.6%|15세 관람가|D-1"
+        app:layout_constraintTop_toBottomOf="@+id/text_movie_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
