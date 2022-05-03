@@ -57,5 +57,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         binding.drawerLayout.closeDrawers()
         return false
     }
+
+    override fun onBackPressed() {
+        if (binding.drawerLayout.isDrawerOpen(GravityCompat.START))
+            binding.drawerLayout.closeDrawers()
+        else
+            super.onBackPressed()
+    }
 }
 

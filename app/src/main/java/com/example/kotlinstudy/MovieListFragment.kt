@@ -1,6 +1,7 @@
 package com.example.kotlinstudy
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -38,6 +39,10 @@ class MovieListFragment : Fragment() {
 
         binding.btnDetail.setOnClickListener(){
             mainActivity.supportFragmentManager.beginTransaction().replace(R.id.frame_layout_movie,MovieDetailFragment()).commit()
+        }
+        binding.btnStudy.setOnClickListener(){
+            val intent = Intent(mainActivity, StudyListActivity::class.java)
+            startActivity(intent)
         }
     }
 }
