@@ -17,7 +17,6 @@ class StudyListActivity: AppCompatActivity() {
         binding = ActivityStudyListBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         loadData()
 
         val studyListData = ArrayList<StudyListData>()
